@@ -1,0 +1,74 @@
+# AdForgeAI Environment Configuration
+# Copy this file to .env and fill in your actual values
+
+# App Configuration
+DEBUG=False
+APP_NAME=AdForgeAI
+APP_VERSION=1.0.0
+
+# Database Configuration (Supabase)
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_KEY=your-supabase-anon-key
+DATABASE_URL=postgresql://postgres:[password]@db.[project-ref].supabase.co:5432/postgres
+
+# AI Services
+OPENAI_API_KEY=sk-your-openai-api-key-here
+ELEVENLABS_API_KEY=your-elevenlabs-api-key
+WHISPER_MODEL=base
+
+# Billing Configuration (Stripe)
+STRIPE_SECRET_KEY=sk_test_your-stripe-secret-key
+STRIPE_PUBLISHABLE_KEY=pk_test_your-stripe-publishable-key
+STRIPE_WEBHOOK_SECRET=whsec_your-webhook-secret
+
+# Google Play Billing (Android)
+GOOGLE_PLAY_PACKAGE_NAME=com.jaguarstorm.adforgeai
+GOOGLE_PLAY_SERVICE_ACCOUNT_KEY={"type": "service_account", ...}
+
+# Social Media API Keys
+YOUTUBE_CLIENT_ID=your-youtube-client-id
+YOUTUBE_CLIENT_SECRET=your-youtube-client-secret
+INSTAGRAM_CLIENT_ID=your-instagram-client-id
+INSTAGRAM_CLIENT_SECRET=your-instagram-client-secret
+TIKTOK_CLIENT_KEY=your-tiktok-client-key
+TIKTOK_CLIENT_SECRET=your-tiktok-client-secret
+TWITTER_API_KEY=your-twitter-api-key
+TWITTER_API_SECRET=your-twitter-api-secret
+FACEBOOK_APP_ID=your-facebook-app-id
+FACEBOOK_APP_SECRET=your-facebook-app-secret
+
+# Security
+JWT_SECRET_KEY=your-32-character-jwt-secret-key-here
+TOKEN_AES_SECRET=your-32-character-aes-secret-key-here
+
+# File Storage
+UPLOAD_DIR=uploads
+MAX_FILE_SIZE=104857600
+
+# Email Configuration (for notifications)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+FROM_EMAIL=noreply@adforgeai.com
+
+# Redis (for caching and background tasks)
+REDIS_URL=redis://localhost:6379
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=adforgeai.log
+
+# Feature Flags
+ENABLE_AI_VIDEO_GENERATOR=true
+ENABLE_AUTO_POSTING=true
+ENABLE_ANALYTICS=true
+
+# Stock Footage API (Pexels)
+PEXELS_API_KEY=your-pexels-api-key
+
+# Optional: External Services
+CLOUDINARY_URL=cloudinary://your-cloudinary-url
+AWS_ACCESS_KEY_ID=your-aws-access-key
+AWS_SECRET_ACCESS_KEY=your-aws-secret-key
+AWS_S3_BUCKET=your-s3-bucket-name 
